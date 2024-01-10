@@ -6,7 +6,7 @@ export default {
         category: 'Sweater',
         image: '/images/d1.jpg',
         price: 12,
-        brand: ' Normal',
+        brand: ' Sweater',
         rating: 4.9,
         numReviews: 10,
         countInStock: 2
@@ -17,7 +17,7 @@ export default {
         category: 'Shirts',
         image: '/images/d2.jpg',
         price: 34,
-        brand: ' Normal',
+        brand: ' Shirts',
         rating: 4.7,
         numReviews: 2,
         countInStock: 2
@@ -28,7 +28,7 @@ export default {
         category: 'Shirts',
         image: '/images/d3.jpg',
         price: 8,
-        brand: ' Normal',
+        brand: ' Shirts',
         rating: 4.8,
         numReviews: 15,
         countInStock: 5
@@ -39,7 +39,7 @@ export default {
         category: 'T-Shirt',
         image: '/images/d4.jpg',
         price: 14,
-        brand: ' Normal',
+        brand: ' T-Shirt',
         rating: 4.4,
         numReviews: 10,
         countInStock: 7
@@ -50,18 +50,18 @@ export default {
         category: 'Shirts',
         image: '/images/d5.jpg',
         price: 12,
-        brand: ' Normal',
+        brand: ' Shirts',
         rating: 4.2,
         numReviews: 6,
         countInStock: 3
         },
         {
         _id:'6',
-        name: 'Sooners',
-        category: 'Shirts',
+        name: 'Light TeeShirt',
+        category: 'T-Shirt',
         image: '/images/d6.jpg',
         price: 16,
-        brand: ' Normal',
+        brand: ' T-Shirt',
         rating: 4.8,
         numReviews: 4,
         countInStock: 1
@@ -72,7 +72,7 @@ export default {
         category: 'T-Shirt',
         image: '/images/d7.jpg',
         price: 17,
-        brand: ' Normal',
+        brand: ' T-Shirt',
         rating: 4.0,
         numReviews: 2,
         countInStock: 6
@@ -83,7 +83,7 @@ export default {
         category: 'Jacket',
         image: '/images/d8.jpg',
         price: 22,
-        brand: ' Normal',
+        brand: ' Jacket',
         rating: 4.4,
         numReviews: 1,
         countInStock: 6
@@ -94,7 +94,7 @@ export default {
         category: 'Jacket',
         image: '/images/d9.jpg',
         price: 20,
-        brand: ' Normal',
+        brand: ' Jacket',
         rating: 4.1,
         numReviews: 8,
         countInStock: 42
@@ -105,7 +105,7 @@ export default {
         category: 'Pants',
         image: '/images/d10.jpg',
         price: 30,
-        brand: ' Normal',
+        brand: ' Pants',
         rating: 4.6,
         numReviews: 1,
         countInStock: 5
@@ -116,7 +116,7 @@ export default {
         category: 'Pants',
         image: '/images/d11.jpg',
         price: 24,
-        brand: ' Normal',
+        brand: ' Pants',
         rating: 4.9,
         numReviews: 8,
         countInStock: 1
@@ -127,7 +127,7 @@ export default {
         category: 'Jacket',
         image: '/images/d12.jpg',
         price: 18,
-        brand: ' Normal',
+        brand: ' Jacket',
         rating: 4.9,
         numReviews: 5,
         countInStock: 1

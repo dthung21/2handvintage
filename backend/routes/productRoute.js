@@ -13,8 +13,8 @@ router.get("/", async (req, res) => {
 })
 router.get("/:id", async (req, res) => {
     const products = await Product.findOne({_id: req.params.id})
-    if(product){
-        res.send(product)
+    if(products){
+        res.send(products)
     } else {
         res.status(404).send({msg: "Product Not Found."})
     }
@@ -41,7 +41,7 @@ router.post("/", isAuth, isAdmin, async(req, res) =>{
 
 router.put("/:id", isAuth, isAdmin, async(req, res) => {
     const productID = req.params.id
-    const product = await Product.findById(productID)
+    const product = await Product.findById(productID);
     if(product){
             product.name = req.body.name
             product.price = req.body.price
@@ -53,22 +53,16 @@ router.put("/:id", isAuth, isAdmin, async(req, res) => {
             product.rating = req.body.rating
             product.numReviews = req.body.numReviews
             const updatedProduct = await product.save()
-    if(updadtedProduct){
+    if(updatedProduct){
        return res.status(200).send({msg: "Product Updated", data: updatedProduct})
     }
     return res.status(500).send({msg: "Error in Updating Product."})
 }
 })
 
-router.delete("/id", isAuth, isAdmin, async (req, res) =>
-{
-    const deleteProduct = await product.findById(req.params.id)
-    if(deleteProduct){
-        await deleteProduct.remove()
-        res.send({msg: "Product Deleted"})
-    } else {
-    res.send("Error in Deletion")
-    }
+router.delete("/:id", isAuth, isAdmin, async (req, res) => {
+    await Product.deleteOne({ _id: req.params.id })
+    return res.status(200).send({msg: "Product Deleted"})
 })
 
 export default router
